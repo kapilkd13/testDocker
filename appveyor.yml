@@ -15,8 +15,8 @@ install:
   - docker version
 
 build_script:  
-  - docker run -it debian
+  - docker build -t me/testdock .
 
 test_script:  
-  - docker run -it debian
+  - docker run me/testdock
 
